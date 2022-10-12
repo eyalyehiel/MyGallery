@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: #222222;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -783,4 +783,8 @@ fieldset[disabled] .btn-xl:hover {
 
 #footer {
     background-color: #222222;
+}
+
+.intro-lead-in , .intro-heading {
+    text-shadow: 0px 0px 6px #fed136;
 }

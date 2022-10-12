@@ -41,7 +41,7 @@ function renderModal(currProject){
       document.querySelector('.project-modal .title-modal').innerText = project.title
       document.querySelector('.project-modal .desc-modal').innerText = project.desc
       document.querySelector('.project-modal .project-date').innerText = project.publishedAt
-      document.querySelector('.project-modal .project-url').innerText = project.url
+      document.querySelector('.project-modal .project-link').href = project.url
       document.querySelector('.project-modal .project-labels').innerText = project.labels
 }
 
@@ -54,4 +54,6 @@ function onSendEmail(ev) {
 
     var url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${msg}&bcc=someone.else@example.com`
     window.open(url)
+
+    document.querySelector('.contact-form').reset()
 }
