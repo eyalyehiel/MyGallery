@@ -113,6 +113,19 @@ body {
         right: -30vw;
     }
 }
+
+@media (max-width: 1100px) {
+    .offcanvas-btn-open {
+        margin-right: 30vw;
+    }
+    .offcanvas-aside {
+        width: 45vw;
+        right: -30vw;
+    }
+    .contact-email ,.contact-subject ,.contact-msg{
+        width: 200px;
+    }
+}
 .offcanvas-aside-open {
     right: 0;
     
@@ -190,7 +203,7 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/gallery-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -766,4 +779,8 @@ fieldset[disabled] .btn-xl:hover {
 .container {
     padding-right: 0;
     padding-left: 0;
+}
+
+#footer {
+    background-color: #222222;
 }

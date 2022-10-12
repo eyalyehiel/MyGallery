@@ -45,6 +45,13 @@ function renderModal(currProject){
       document.querySelector('.project-modal .project-labels').innerText = project.labels
 }
 
-function onSendEmail() {
-  
+function onSendEmail(ev) {
+    ev.preventDefault()
+
+    var email = document.querySelector('.contact-email').value
+    var subject = document.querySelector('.contact-subject').value
+    var msg = document.querySelector('.contact-msg').value
+
+    var url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${msg}&bcc=someone.else@example.com`
+    window.open(url)
 }
